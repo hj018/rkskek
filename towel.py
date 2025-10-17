@@ -45,7 +45,7 @@ elif st.session_state['page'] == 'baseball':
     if team == '두산 베어스':
         img_col, text_col = st.columns([0.15, 0.85])
         with img_col:
-            st.image('두산.PNG', width=80)
+            st.image('spongebob/두산.PNG', width=80)
         with text_col:
             st.subheader('두산 베어스')
         st.write('=> 창단연도: 1982년')
@@ -520,4 +520,5 @@ elif st.session_state['page'] == 'book':
             st.subheader(f'{z["제품명"]}')
             st.write(f'{z["기능"]}')
     st.markdown("-----")
+
     st.button('🏠 홈으로 돌아가기', on_click=change_page, args=['home'])
